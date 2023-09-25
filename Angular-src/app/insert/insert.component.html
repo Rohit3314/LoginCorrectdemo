@@ -1,0 +1,28 @@
+
+<div align="center">
+    <h3> Insert Customer data</h3>
+    <br><br>
+
+    <form #customerform= "ngForm" (ngSubmit)="insertdata(customerform)" >
+
+      <label> CID : </label>
+      <input type="number" id="cid" name="cid" #cid (ngModel)="cid">
+      <br>
+      
+      <label> Cname : </label>
+      <input type="text" id="cname" name="cname" #cname (ngModel)="cname">
+      <br>
+
+      
+      <label> Camount : </label>
+      <input type="text" id="camount" name="camount" #camount (ngModel)="camount">
+      <br>
+
+      <input type="submit" value="Insert">
+    </form>
+
+
+
+
+</div>
+
